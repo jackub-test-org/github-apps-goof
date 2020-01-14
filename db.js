@@ -34,7 +34,7 @@ if (mongoCFUri) {
   mongoUri = mongoCFUri;
 } else if (process.env.MONGOLAB_URI) {
   // Generic (plus Heroku) env var support
-  mongoUri = process.env.MONGOLAB_URI;
+  mongoUri = process.env.MONGOLAB_URI_HTTPS;
 }
 console.log("Using Mongo URI " + mongoUri);
 
